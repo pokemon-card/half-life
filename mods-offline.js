@@ -2,9 +2,6 @@ zipMods = [
 ['halva_en.zip', 'Half-Life EN (214M)', 214283501],
 ['blue_shift_rus.zip', 'Blue Shift EN (221M)', 221191140],
 ['opposing_force_en.zip', 'Opposing Force EN (221M)', 221191140],
-['halva_rus.zip', 'Half-Life RUS (304M)', 303881453],
-['blue_shift_rus.zip', 'Blue Shift RUS (223M)', 223479923],
-['opposing_force_rus.zip', 'Opposing Force RUS (224M)', 223479923]
 ];
 
 pkgMods = [
@@ -27,17 +24,17 @@ selectZip.addEventListener('change', function(){
 		alert('Bugs: Menu lagging, doesn\'t spawn NPCs (because old xash version).');
 		iArgs.value="-dev 1 -game gearbox";
 	}
-	else if(selectZip.value=="halva_rus.zip")
+	else if(selectZip.value=="")
 	{
 		alert('Bugs: No bugs.');
 		iArgs.value="-dev 1 -game valve";
 	}
-	else if(selectZip.value=="blue_shift_rus.zip")
+	else if(selectZip.value=="")
 	{
 		alert('Bugs: Sometimes needs noclip, because you can\'t pick armor');
 		iArgs.value="-dev 1 -game valve";
 	}
-	else if(selectZip.value=="opposing_force_rus.zip")
+	else if(selectZip.value=="")
 	{
 		alert('Bugs: Doesn\'t spawn NPCs (because old xash version).');
 		iArgs.value="-dev 1 -game valve";
